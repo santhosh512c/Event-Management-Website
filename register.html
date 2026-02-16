@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EventX | Register</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">EventX</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="events.html">Events</a></li>
+        <li><a class="nav-link" href="schedule.html">Schedule</a></li>
+        <li><a class="nav-link" href="speakers.html">Speakers</a></li>
+        <li><a class="nav-link" href="register.html">Register</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Register</h1>
+      <p>Reserve your spot. We will email your pass within 24 hours.</p>
+    </section>
+
+    <section class="form-card">
+      <form id="regForm">
+        <label>
+          Full Name
+          <input type="text" name="name" placeholder="Full Name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="Email" required>
+        </label>
+        <label>
+          Ticket Type
+          <select name="ticket" required>
+            <option value="">Select a ticket</option>
+            <option value="general">General Pass</option>
+            <option value="pro">Pro Pass</option>
+            <option value="team">Team Bundle</option>
+          </select>
+        </label>
+        <button class="btn primary" type="submit">Submit</button>
+      </form>
+      <p id="msg" class="form-msg" role="status"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>EventX Conference. All rights reserved. <span data-year></span></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
